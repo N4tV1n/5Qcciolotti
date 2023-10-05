@@ -1,0 +1,158 @@
+{
+    "competizione": [
+        {
+            "nome": "Campionato Serie A",
+            "squadra": [
+                {
+                    "nome_squadra": "Napoli",
+                    "codice_squadra": "014",
+                    "giocatore": [
+                        {
+                            "nome": "Victor",
+                            "cognome": "Osimhen",
+                            "ruolo": "A",
+                            "squadra_giocatore": "Napoli",
+                            "codice_squadra": "014",
+                            "immagine": true,
+                            "eta": 25,
+                            "altezza": 1.86,
+                            "piede": "Dx",
+                            "nazione": "Nigeria",
+                            "quotazione": 44,
+                            "media_voto": 6.83,
+                            "fanta_media_voto": 9.83,
+                            "partite_giocate": 3,
+                            "gol": 3,
+                            "assist": 0,
+                            "ammonizioni": 0,
+                            "espulsioni": 0,
+                            "rigori_segnati": "1/1"
+                        },
+                        {
+                            "nome": "Stanislav",
+                            "cognome": "Lobotka",
+                            "ruolo": "C",
+                            "squadra_giocatore": "Napoli",
+                            "codice_squadra": "014",
+                            "immagine": true,
+                            "eta": 28,
+                            "altezza": 1.72,
+                            "piede": "Dx",
+                            "nazione": "Slovacchia",
+                            "quotazione": 13,
+                            "media_voto": 6.00,
+                            "fanta_media_voto": 5.83,
+                            "partite_giocate": 3,
+                            "gol": 0,
+                            "assist": 0,
+                            "ammonizioni": 1,
+                            "espulsioni": 0,
+                            "rigori_segnati": "0/0"
+                        },
+                        {
+                            "nome": "Giovanni",
+                            "cognome": "Di Lorenzo",
+                            "ruolo": "D",
+                            "squadra_giocatore": "Napoli",
+                            "codice_squadra": "014",
+                            "immagine": true,
+                            "eta": 30,
+                            "altezza": 1.83,
+                            "piede": "Dx",
+                            "nazione": "Italia",
+                            "quotazione": 20,
+                            "media_voto": 6.83,
+                            "fanta_media_voto": 8.50,
+                            "partite_giocate": 3,
+                            "gol": 1,
+                            "assist": 2,
+                            "ammonizioni": 0,
+                            "espulsioni": 0,
+                            "rigori_segnati": "0/0"
+                        }
+                    ]
+                },
+                {
+                    "nome_squadra": "Milan",
+                    "logo": "metterelink",
+                    "codice_squadra": "012",
+                    "giocatore": [
+                        {
+                            "nome": "Olivier",
+                            "cognome": "Giroud",
+                            "ruolo": "A",
+                            "squadra_giocatore": "Milan",
+                            "codice_squadra": "012",
+                            "immagine": true,
+                            "eta": 36,
+                            "altezza": 1.93,
+                            "piede": "Sx",
+                            "nazione": "Francia",
+                            "quotazione": 28,
+                            "media_voto": 7.33,
+                            "fanta_media_voto": 11.67,
+                            "partite_giocate": 3,
+                            "gol": 4,
+                            "assist": 1,
+                            "ammonizioni": 0,
+                            "espulsioni": 0,
+                            "rigori_segnati": "3/3"
+                        },
+                        {
+                            "nome": "Tijjani",
+                            "cognome": "Reijinders",
+                            "ruolo": "C",
+                            "squadra_giocatore": "Milan",
+                            "codice_squadra": "012",
+                            "immagine": true,
+                            "eta": 25,
+                            "altezza": 1.85,
+                            "piede": "Dx",
+                            "nazione": "Olanda",
+                            "quotazione": 13,
+                            "media_voto": 6.50,
+                            "fanta_media_voto": 6.83,
+                            "partite_giocate": 3,
+                            "gol": 0,
+                            "assist": 1,
+                            "ammonizioni": 0,
+                            "espulsioni": 0,
+                            "rigori_segnati": "0/0"
+                        },
+                        {
+                            "nome": "Theo",
+                            "cognome": "Hernandez",
+                            "ruolo": "D",
+                            "squadra_giocatore": "Milan",
+                            "codice_squadra": "012",
+                            "immagine": true,
+                            "eta": 25,
+                            "altezza": 1.84,
+                            "piede": "Sx",
+                            "nazione": "Francia",
+                            "quotazione": 18,
+                            "media_voto": 6.50,
+                            "fanta_media_voto": 7.17,
+                            "partite_giocate": 3,
+                            "gol": 1,
+                            "assist": 0,
+                            "ammonizioni": 2,
+                            "espulsioni": 0,
+                            "rigori_segnati": "0/0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome": "Campionato Serie B",
+            "squadra": [
+            ]
+        },
+        {
+            "nome": "Campionato Serie C",
+            "squadra": [
+            ]
+        }
+    ]
+}

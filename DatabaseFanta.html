@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <!--<section>
+        <p> listone </p>
+        <div id="campionati">
+            <p> campionato di Serie A</p>
+            <div id="squadre">
+                <p> squadre </p>
+                <div id="giocatori">
+                    <p> giocatori </p>
+                </div>
+            </div>
+        </div> 
+    </section> -->
+
+    <section id="listone">
+
+    </section>
+
+    <script>
+        // console.log(document.children)
+        fetch('./Fantacalcio_Compilato.json')
+            .then((response) => response.json())
+            .then((json) => {
+
+                // console.log(json);
+                // console.log(json.competizione);
+                // console.log(json.competizione[0]);
+                // console.log(json.competizione.nome[0]); 
+
+                json.competizione.forEach(competizione => {
+                    console.log(competizione.nome);                 //esce il nome dei campionati
+
+
+                    //#################################################
+                    //INIZIO INSERIMENTO CAMPIONATO
+
+                    const nodoCamp = document.createElement("div");
+                    const nodoNomeCamp = document.createElement("p");
+                    const textnode = document.createTextNode(competizione.nome);
+
+                    nodoNomeCamp.appendChild(textnode);
+                    nodoCamp.appendChild(nodoNomeCamp);
+
+                    document.getElementById("listone").appendChild(nodoCamp);
+
+                    //FINE INSERIMENTO CAMPIONATO
+                    // #################################################
+            
+
+                    competizione.squadra.forEach(squadra => {          //esce il nome delle squadre
+                        console.log(squadra.nome_squadra);
+
+                        //#################################################
+                        //INIZIO INSERIMENTO SQUADRA
+
+                        const nodoSquad = document.createElement("div");
+                        const nodoNomeSquad = document.createElement("p");
+                        const textnode = document.createTextNode(squadra.nome_squadra);
+                        nodoNomeSquad.appendChild(textnode);
+                        nodoSquad.appendChild(nodoNomeSquad);
+
+                        //creato nodo squadra
+                        nodoCamp.appendChild(nodoSquad);
+
+                        nodoCamp.style.backgroundColor
+                        //FINE INSERIMENTO SQUADRA
+                        // #################################################
+
+
+
+                        squadra.giocatore.forEach(giocatore => {           //esce il nome dei giocatori
+                            console.log(giocatore.nome + ' ' + giocatore.cognome);
+
+                        //#################################################
+                        //INIZIO INSERIMENTO GIOCATORE
+
+                        const nodoPlayer = document.createElement("div");
+                        const nodoNomePlayer = document.createElement("p");
+                        const textnode = document.createTextNode(giocatore.nome + ' ' + giocatore.cognome);
+                        nodoNomePlayer.appendChild(textnode);
+                        nodoPlayer.appendChild(nodoNomePlayer);
+
+                        //creato nodo giocatore
+                        nodoSquad.appendChild(nodoPlayer);
+
+                        nodoCamp.style.backgroundColor
+                        //FINE INSERIMENTO GIOCATORE
+                        // #################################################
+                        })
+                    })
+                    
+                });
+            });
+    </script>
+</body>
+</html>
+
+
+<!--console.log(json);
+    document.getElementById("cognome").innerHTML = json.competizione[0].squadra[0].giocatore[0].cognome;
+    document.getElementById("ruolo").innerHTML = json.competizione[0].squadra[0].giocatore[0].ruolo;
+    document.getElementById("squadra_giocatore").innerHTML = json.competizione[0].squadra[0].giocatore[0].squadra_giocatore;
+    document.getElementById("altezza").innerHTML = json.competizione[0].squadra[0].giocatore[0].altezza;
+    document.getElementById("quotazione").innerHTML = json.competizione[0].squadra[0].giocatore[0].quotazione;
+    document.getElementById("media_voto").innerHTML = json.competizione[0].squadra[0].giocatore[0].media_voto;
+    document.getElementById("fanta_media_voto").innerHTML = json.competizione[0].squadra[0].giocatore[0].fanta_media_voto;
+    document.getElementById("partite_giocate").innerHTML = json.competizione[0].squadra[0].giocatore[0].partite_giocate;
+    document.getElementById("gol").innerHTML = json.competizione[0].squadra[0].giocatore[0].gol;
+    document.getElementById("assist").innerHTML = json.competizione[0].squadra[0].giocatore[0].assist;
+
+    if (json.squadra.nome == 'Napoli') {
+        document.getElementById("logo").innerHTML = "metterelink"
+    }   -->
